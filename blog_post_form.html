@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="styleform.css">
+    <head>
+        
+        <title>Blog Post Form</title>
+        <link rel="stylesheet" type="text/css" href="styleform.css">
+        
+    </head>
+
+    <body>
+
+        <h2> Your Science Blog Post </h2>
+
+        <br>
+
+    <form>
+
+        <div class="top"> 
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <br>
+
+        <div class="top">
+            <label for="name">Author:</label>
+            <input type="text" id="name" name="author" required>
+        </div>
+
+        <br>
+
+        <div class="top">
+            <label for="content"Blog Post:></label>
+            <textarea id="content" name="content" rows="10" cols="40" placeholder="Begin writing your blog post here..." required></textarea>
+        </div>
+
+        <br>
+
+        <div class="top">
+            <label for="category">Categories</label>
+            <select id="catergory" name="catergory">
+                <option value="Natural Science">Natural Science</option>
+                <option value="Social Science">Social Science</option>
+                <option value="Formal Science">Formal Science</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div  class="top">
+            <button onclick="myFunction()">Submit</button>
+
+            <p id="demo"></p>
+
+            <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "Form submitted";
+            }
+            </script>
+        </div>
+
+    </form>
+
+    </body>
+</html>
